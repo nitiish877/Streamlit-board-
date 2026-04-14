@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sea
 import numpy as np
-df=pd.read_json("D:\\downloads\\nitishh\\seaborn\\student_sessional_dataset.json")
+df=pd.read_json("/content/student_sessional_dataset.json")
 
 df["status"]=np.where(df["marks"]>=76,"pass","fail")
 df["result_date"]=pd.to_datetime(df["result_date"])
